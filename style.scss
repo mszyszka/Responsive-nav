@@ -41,9 +41,9 @@ a {
     .site-nav-ul {
         list-style-type: none;
         background: #fff;
-        width: 0;
+        width: 100%;
         position: absolute;
-        top: 100%;
+        top: 99%;
         left: 0;
         max-height: 0;
         overflow: hidden;
@@ -52,11 +52,11 @@ a {
             text-align: left;
             text-transform: uppercase;
             font-weight: 500;
-            padding: 10px 0 10px 30px;
+            padding: 10px 10px 10px 30px;
             font-size: 18px;
             background: #fff;
             &:hover{
-                filter: brightness(97%);
+                filter: brightness(95%);
             }
             cursor: pointer;
             a {
@@ -80,6 +80,25 @@ a {
         }
     }
 }
-.red {
-    background: red;
+@media(min-width: 900px) {
+    .site-nav {
+        .menu-toggle {
+            display: none;
+        }
+        .site-nav-ul {
+            text-align: right;
+            padding: 0;
+            width: 100%;
+            max-height: 600px;
+            position: unset;
+            li {
+                display: inline-block;
+                padding: 19px 5px 19px 5px;
+                a {
+                    
+                }
+            }
+        }
+    }
+
 }
